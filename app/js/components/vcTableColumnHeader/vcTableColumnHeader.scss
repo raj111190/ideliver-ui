@@ -1,0 +1,55 @@
+@import '../../../css/theme';
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 75% !important;
+}
+
+.sortIcons {
+  min-width: unset !important;
+  padding: unset !important;
+  padding-bottom: 14px !important;
+  margin-right: unset !important;
+  > span {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+.icon {
+  color: lightgray;
+  margin-bottom: -14px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  color: gray !important;
+}
+
+.button {
+  //   width: 100%;
+  min-width: unset !important;
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+  margin-left: unset !important;
+  font-size: 12px !important;
+  color: $text_color_7 !important;
+}
+
+.formGroup > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.popper {
+  z-index: 1;
+}

@@ -1,0 +1,82 @@
+.paper {
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.submitButtonContainer {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  justify-content: space-between;
+}
+.encounterDatetime {
+  margin-right: 28px;
+  margin-left: 28px;
+  width: 300px;
+}
+.section {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.formFields {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.formElement {
+  flex: 0 1 auto;
+  align-self: auto;
+  width: 50%;
+
+  @media all and (max-width: 980px) {
+    width: 100%;
+  }
+}
+
+.divider {
+  margin-left: 2% !important;
+  margin-right: 2% !important;
+}
+
+.textField {
+  width: 272px;
+}
+.textArea {
+  width: 100% !important;
+}
+.dropDown {
+  min-width: 272px !important;
+  padding-bottom: 16px;
+}
+.header {
+  padding-top: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.title {
+  margin-right: auto !important;
+}
+
+.dateTime {
+  max-width: 512px !important;
+}
+
+.button {
+  margin-top: 15px;
+  height: 40px;
+}
+
+.progress {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+}
+.buttonVertical {
+  margin-top: 15px;
+}

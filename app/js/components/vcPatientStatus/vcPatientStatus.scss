@@ -1,0 +1,47 @@
+@import '../../../css/theme';
+
+.statusPosition {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+
+  .throughLine {
+    width: 100px;
+    background-color: #d1d1d1;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+  }
+
+  .statusBubble {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $white;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #d1d1d1;
+    z-index: 1;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.filled {
+      border-color: $white;
+      background-color: $seafoam_blue;
+    }
+  }
+}
+
+.patientStatus {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+
+  .statusLabel {
+    text-align: center;
+    color: $seafoam_blue;
+    font-size: 18px;
+  }
+}

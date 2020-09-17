@@ -1,0 +1,156 @@
+@import '../../../css/theme';
+
+.radialProgress {
+  $circle-size: 140px;
+  $circle-background: #d1ebe6;
+  $circle-color: #79d4c3;
+  $circle-over-background: #e43a52;
+  $circle-over-color: #d1ebe6;
+  $circle-warn-background: #d1ebe6;
+  $circle-warn-color: #efaa46;
+  $inset-size: 125px;
+  $inset-color: #ffffff;
+  $transition-length: 1s;
+  $shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  $percentage-color: #7cd3c2;
+  $percentage-over-color: #e43a52;
+  $percentage-warn-color: #efaa46;
+  $percentage-font-size: 32px;
+  $percentage-text-width: 87px;
+
+  margin-top: 10px;
+  width: $circle-size;
+  height: $circle-size;
+
+  border-radius: 50%;
+  transition: background-color;
+
+  .circle {
+    .mask,
+    .fill,
+    .shadow {
+      width: $circle-size;
+      height: $circle-size;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .shadow {
+      box-shadow: $shadow inset;
+    }
+    .mask,
+    .fill {
+      -webkit-backface-visibility: hidden;
+      transition: -webkit-transform $transition-length;
+      transition: -ms-transform $transition-length;
+      transition: transform $transition-length;
+      border-radius: 50%;
+    }
+    .mask {
+      clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+      .fill {
+        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+        background-color: $circle-color;
+        transition: background-color;
+      }
+    }
+  }
+
+  .inset {
+    width: $inset-size;
+    height: $inset-size;
+    position: absolute;
+    margin-left: ($circle-size - $inset-size)/2;
+    margin-top: ($circle-size - $inset-size)/2;
+
+    background-color: $inset-color;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    .percentage {
+      height: $percentage-font-size;
+      width: 100%;
+      overflow: visible;
+
+      position: absolute;
+      top: 30px;
+      left: ($inset-size - $percentage-text-width) / 2;
+
+      line-height: 1;
+      .numbers {
+        margin-top: -5px;
+        span {
+          width: $percentage-text-width;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          font-weight: 800;
+          font-size: $percentage-font-size;
+          font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          color: $percentage-color;
+        }
+      }
+    }
+  }
+
+  &:before {
+    position: absolute;
+    display: block;
+    width: $circle-size;
+    height: 32px;
+
+    font-size: 16px;
+    color: $percentage-color;
+    font-weight: 600;
+
+    content: attr(checkup-msg);
+
+    margin: 75px 42px 42px 16px;
+    z-index: 1;
+  }
+
+  &.warn {
+    .circle .mask .fill {
+      background-color: $circle-warn-color;
+    }
+    .percentage .numbers span {
+      color: $percentage-warn-color;
+    }
+
+    &:before {
+      color: $percentage-warn-color;
+    }
+  }
+
+  &.over {
+    .shadow {
+      background-color: $percentage-over-color;
+    }
+    .circle .mask .fill {
+      background-color: $white;
+    }
+    .percentage .numbers span {
+      color: $percentage-over-color;
+    }
+
+    &:before {
+      color: $percentage-over-color;
+      content: attr(overdue-msg);
+      margin: 82px 32px 32px 36px;
+    }
+  }
+
+  $i: 0;
+  $increment: 180deg / 100;
+  @for $i from 0 through 100 {
+    &[data-progress='#{$i}'] {
+      .circle {
+        .mask.full,
+        .fill {
+          transform: rotate($increment * $i);
+        }
+        .fill.fix {
+          transform: rotate($increment * $i * 2);
+        }
+      }
+    }
+  }
+}

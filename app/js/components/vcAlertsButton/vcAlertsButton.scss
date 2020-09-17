@@ -1,0 +1,46 @@
+@import '../../../css/theme';
+
+.avatar {
+  background-color: $seafoam_blue_dark !important;
+}
+
+.title {
+  width: 300px;
+  direction: ltr;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: $text_color_1;
+  line-height: 25px;
+  height: 40px;
+  line-height: 25px;
+  padding-left: 15px;
+  padding-top: 15px;
+  position: relative;
+  text-align: left;
+}
+
+.redDot {
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  line-height: 18px;
+  color: $white;
+  font-size: 12px;
+  background-color: $watermelon;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.paper {
+  height: 400px !important;
+}
+
+.popper {
+  z-index: 1;
+}

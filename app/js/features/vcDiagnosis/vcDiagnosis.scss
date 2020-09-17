@@ -1,0 +1,161 @@
+@import '../../../css/theme';
+
+.dialogContent {
+  background-color: $whitesmoke !important;
+  padding-top: 25px !important;
+  padding-bottom: 1px !important;
+  max-height: 400px !important;
+  overflow-y: auto !important;
+}
+
+.checkbox {
+  margin-left: auto !important;
+  margin-top: -11px !important;
+  > span {
+    > svg {
+      font-size: 19px !important;
+    }
+  }
+}
+
+.body {
+  position: absolute;
+  background: #fcfcfc;
+  top: 75px;
+  bottom: 75px;
+}
+
+.grid {
+  display: flex;
+}
+
+.block {
+  width: 100%;
+  height: 235px;
+  border-bottom: 2px solid $dark_orchid;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  &:last-of-type {
+    height: 165px;
+    border: none;
+    overflow: auto;
+  }
+}
+
+.doubleblock {
+  width: 100%;
+  height: 470px;
+  border-bottom: 2px solid $dark_orchid;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  &:last-of-type {
+    height: 470px;
+    border: none;
+    overflow: auto;
+  }
+}
+
+.section {
+  width: 50%;
+  &:last-of-type {
+    width: calc(50% - 2px);
+    border-left: 2px solid $dark_orchid;
+  }
+}
+
+.header {
+  background: $dark_orchid;
+}
+
+.title {
+  @extend %roboto;
+  color: $dark_orchid;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $dark_orchid;
+  height: 65px;
+
+  .vcButton {
+    > button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+    }
+  }
+
+  .submitButtonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #faf8fb;
+    color: $dark_orchid;
+    width: 150px;
+  }
+}
+
+.backgroundColorSVGPurple {
+  > span {
+    > svg {
+      fill: $dark_orchid !important;
+    }
+  }
+}
+
+.label {
+  margin-left: 20px;
+  font-size: 14px !important;
+  min-width: 200px;
+}
+
+.backgroundColorLabelPurple {
+  color: $dark_orchid !important;
+}
+
+.row {
+  display: flex !important;
+}
+
+.svgIcon {
+  font-size: 16px !important;
+}
+
+.divider {
+  margin-top: 2px !important;
+}
+
+.fullRow {
+  > hr {
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+}
+
+.backgroundColorIconPurple {
+  > svg {
+    fill: $dark_orchid !important;
+  }
+}
+
+.progress {
+  position: absolute;
+  left: 25vw;
+  top: 50vh;
+}
+
+.diagnosisPicker {
+  @media (min-width: 640px) {
+    width: 420px;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../../css/theme.scss';
+.container {
+  height: calc(100vh - 105px);
+  > h4 {
+    margin-left: 2%;
+  }
+}
+
+.results {
+  font-style: italic;
+}
+
+.filterCon {
+  background: linear-gradient(
+    90deg,
+    $dark_lavender,
+    $light_blue,
+    $seafoam_blue
+  );
+  color: $white;
+  display: block;
+  width: 100%;
+}
+.filtered {
+  ul {
+    margin: 0px;
+    padding: 0 24px 0 0;
+  }
+  li {
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &.active {
+      background: rgba(0, 0, 0, 0.1);
+      border-bottom: 2px solid $seafoam_blue;
+    }
+  }
+}
+.popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.3);
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

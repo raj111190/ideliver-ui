@@ -1,0 +1,43 @@
+@import '../../../css/theme';
+.card {
+  max-height: 400px;
+  margin-left: 5px;
+}
+
+.header {
+  height: 80px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.backgroundColorGreen {
+  background-color: $seafoam_blue;
+}
+
+.backgroundColorPurple {
+  background-color: $dark_orchid;
+}
+.backgroundColorGrey {
+  background-color: $grey;
+}
+
+.title {
+  margin-left: 12px !important;
+  color: $white !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+}
+
+.action {
+  > button {
+    background-color: $white;
+    top: 51px;
+    right: 26px;
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.paper {
+  margin-bottom: unset;
+}

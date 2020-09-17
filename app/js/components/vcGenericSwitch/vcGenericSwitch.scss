@@ -1,0 +1,51 @@
+@import '../../../css/theme';
+.gridContainer {
+  flex: auto;
+  overflow: hidden;
+  overflow-x: auto;
+  height: 100%;
+}
+.break {
+  transform: translateY(20px);
+}
+.toggleRow {
+  justify-content: flex-end;
+}
+.toggle {
+  margin-left: auto !important;
+}
+.typography {
+  margin-top: 8px !important;
+}
+.childrenGridContainer {
+  flex-flow: row wrap;
+  overflow-x: hidden;
+}
+.childrenGridContainer div {
+  width: 48%;
+  margin-right: 1%;
+}
+.childrenGridContainer div div {
+  width: 100% !important;
+}
+.childrenGridContainer form {
+  max-width: 48%;
+  min-width: 48%;
+  margin-right: 1%;
+}
+.childrenGridContainer form div {
+  width: 100% !important;
+}
+.childrenGridContainer label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.childrenGridContainer div:focus {
+  background: transparent;
+}
+
+.disableToggle {
+  opacity: 0.5;
+  pointer-events: none;
+}

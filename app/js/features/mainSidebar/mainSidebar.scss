@@ -1,0 +1,25 @@
+@import '../../../css/theme';
+@import '../../../css/theme';
+
+.anchor {
+  margin: auto;
+  margin-bottom: 12px;
+  align-self: center;
+}
+
+.icon {
+  max-width: 75px;
+  max-height: 28px;
+  flex-shrink: initial;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.avatarHome {
+  height: 72px !important;
+  width: 72px !important;
+  background-color: $seafoam_blue !important;
+  font-size: 3em !important;
+}

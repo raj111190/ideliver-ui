@@ -1,0 +1,1 @@
+export default {"title":"Vecna Cares React Component Catalog"}

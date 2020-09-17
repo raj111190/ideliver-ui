@@ -1,0 +1,73 @@
+@import '../../../css/theme';
+.dialogContent {
+  background-color: $whitesmoke !important;
+  padding-top: 25px !important;
+  padding-bottom: 1px !important;
+  max-height: 400px !important;
+  overflow-y: auto !important;
+}
+
+.checkbox {
+  margin-left: auto !important;
+  margin-top: -11px !important;
+  > span {
+    > svg {
+      font-size: 19px !important;
+    }
+  }
+}
+
+.backgroundColorSVGGreen {
+  > span {
+    > svg {
+      fill: $seafoam_blue !important;
+    }
+  }
+}
+
+.backgroundColorSVGPurple {
+  > span {
+    > svg {
+      fill: $dark_orchid !important;
+    }
+  }
+}
+
+.label {
+  margin-left: 20px;
+  font-size: 14px !important;
+}
+
+.backgroundColorLabelGreen {
+  color: $seafoam_blue !important;
+}
+
+.backgroundColorLabelPurple {
+  color: $dark_orchid !important;
+}
+
+.row {
+  display: flex !important;
+}
+
+.svgIcon {
+  font-size: 16px !important;
+}
+
+.fullRow {
+  > hr {
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+}
+
+.backgroundColorIconGreen {
+  > svg {
+    fill: $seafoam_blue !important;
+  }
+}
+.backgroundColorIconPurple {
+  > svg {
+    fill: $dark_orchid !important;
+  }
+}

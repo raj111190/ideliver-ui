@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "name": "ideliver.ui",
+  "description": "iDeliver UI",
+  "launch_path": "index.html#visits",
+  "icons": {
+    "48": "/img/omrs-button.png"
+  },
+  "developer": {
+    "name": "olivier.dusabimana",
+    "url": "https://github.com/olivier.dusabimana/openmrs-owa-ideliver.ui"
+  },
+  "default_locale": "en",
+    "activities": {
+      "openmrs": {
+        "href": "*"
+      }
+    }
+}

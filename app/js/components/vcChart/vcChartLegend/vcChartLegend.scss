@@ -1,0 +1,10 @@
+.container {
+  align-items: center;
+  > * {
+    padding-right: 2px;
+  }
+
+  *:nth-child(2n) {
+    padding-right: 8px;
+  }
+}

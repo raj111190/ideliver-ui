@@ -1,0 +1,5 @@
+VcChartLegend example:
+
+```js
+<VcChartLegend />
+```

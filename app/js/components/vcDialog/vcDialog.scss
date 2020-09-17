@@ -1,0 +1,44 @@
+@import '../../../css/theme';
+
+.dialogTitle {
+  padding: 24px 24px 5px 27px !important;
+}
+
+.backgroundColorGreen {
+  background-color: $seafoam_blue !important;
+}
+
+.backgroundColorPurple {
+  background-color: $dark_orchid !important;
+}
+
+.backgroundColorGrey {
+  background-color: $grey !important;
+}
+
+.closeButton {
+  color: $grey !important;
+  font-size: x-small !important;
+  margin: -43px -11px 0px 0px !important;
+  padding-top: 14px !important;
+}
+
+.colorWhite {
+  color: $white !important;
+}
+
+.otherLabel {
+  font-size: medium !important;
+  color: $white !important;
+  text-transform: none !important;
+  font-size: medium;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.paper {
+  border-radius: 14px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}

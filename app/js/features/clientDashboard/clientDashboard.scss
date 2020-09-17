@@ -1,0 +1,29 @@
+.header {
+  min-width: 675px !important;
+}
+.container {
+  flex-shrink: 0;
+  min-width: 675px;
+  transform: translate(0, -2%);
+}
+.patientCard {
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.col {
+  flex: 1;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  width: 33.33%;
+}
+.row {
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 40px;
+  justify-content: space-between;
+}
+.firstRow {
+  @extend .row;
+  min-height: 320px;
+}

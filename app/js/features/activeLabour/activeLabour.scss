@@ -1,0 +1,50 @@
+.buttonContainer {
+  padding: 14px;
+  text-align: right;
+}
+.label {
+  padding: 14px;
+}
+.labelVitals {
+  padding-left: 14px;
+  padding-top: 14px;
+}
+.paper {
+  display: grid;
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.forms {
+  margin-bottom: 0px;
+}
+.chart {
+  margin-bottom: 14px;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
+  width: 80%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.tabsscroll {
+  margin: 0 auto;
+  [class*='scrollable'] {
+    width: 100%;
+    max-width: 900px;
+    min-width: 900px;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 1024px) {
+  .tabsscroll {
+    [class*='scrollable'] {
+      width: 100%;
+      max-width: 400px;
+      min-width: 400px;
+      margin: 0 auto !important;
+    }
+  }
+}

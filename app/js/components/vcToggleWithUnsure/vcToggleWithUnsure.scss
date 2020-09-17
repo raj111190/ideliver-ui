@@ -1,0 +1,41 @@
+@import '../../../css/theme';
+
+.sectionToggle {
+  position: relative;
+  top: auto;
+  right: auto;
+  @extend %roboto;
+  font-size: 12px;
+  color: #bababa;
+  border: solid 1px $light_grey;
+  border-radius: $tile-border-radius;
+  background-color: $white;
+  cursor: pointer;
+  user-select: none;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  align-self: baseline;
+
+  .sliderLabel {
+    display: inline-block;
+    width: 55px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    transition: all 200ms linear;
+  }
+
+  .checked {
+    background-color: $dark_lavender;
+    color: $white;
+  }
+}
+
+.slider {
+  display: flex;
+}

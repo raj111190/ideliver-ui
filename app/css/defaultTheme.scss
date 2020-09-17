@@ -1,0 +1,147 @@
+#app {
+  padding-left: 100px;
+}
+
+/* Color palette */
+$seafoam_blue: #71cac3;
+$dark_orchid: #9932cc;
+$seafoam_blue_dark: rgba(48, 106, 104, 0.16);
+$watermelon: #f24c51;
+$apricot: #ffbf64;
+$coral: #ff9b38;
+$seafoam_blue_two: #70cac7;
+$dark_lavender: #7657a0;
+$seagreen: seagreen;
+$light_blue: #63cdf6;
+$white: #f9f9f9;
+$whitesmoke: whitesmoke;
+$blueygrey: #919abc;
+$black_26: rgba(0, 0, 0, 0.26);
+$black: black;
+$light_grey: #dadada;
+$hex_blue: #3f51b5;
+$hex_black2: #000000;
+$hex_grey: #ededed;
+$grey: grey;
+$hex_black: #333333;
+$side-nav-width: 140px;
+$hex_dark_violet: #3b0054;
+$fab-size: 65px;
+$text_color_1: #333333;
+$text_color_4: #f1f2f2;
+$text_color_7: #716f6f;
+$acuity_color_1: #8a0301;
+$acuity_color_2: $watermelon;
+$acuity_color_3: #e4d302;
+$acuity_color_4: #03780f;
+$acuity_color_5: #abb2b9;
+$green: green;
+
+.buttonColors {
+  background-color: $dark_lavender;
+  color: $white;
+}
+
+/* Roboto */
+%roboto {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+%all-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+$tile-border-radius: 3px;
+%v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+html {
+  @extend %roboto;
+}
+
+body {
+  margin: 0;
+  background-color: #ededed;
+}
+
+/* Text styles */
+.textStyle {
+  @extend %roboto;
+  font-size: 40px;
+  font-weight: 500;
+  color: $text_color_1;
+}
+
+.textStyle2 {
+  @extend %roboto;
+  font-size: 23px;
+  line-height: 0.8;
+  color: #a4a4a4;
+}
+
+.textStyle3 {
+  @extend %roboto;
+  font-size: 27px;
+  font-weight: bold;
+  color: $dark_lavender;
+}
+
+.textStyle4 {
+  @extend %roboto;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: $text_color_4;
+}
+
+.textStyle5 {
+  @extend %roboto;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.textStyle6 {
+  @extend %roboto;
+  font-size: 20px;
+  line-height: 5.8;
+  color: rgba(118, 87, 160, 0.7);
+}
+
+.textStyle7 {
+  @extend %roboto;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: $text_color_7;
+}
+
+.textStyle8 {
+  @extend %roboto;
+  font-size: 24px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.textStyle9 {
+  @extend %roboto;
+  font-size: 32px;
+  color: $text_color_1;
+}
+
+.textareaOutline {
+  outline: none !important;
+}
+
+// This is a style for validation warnings. The display property gets changed to block
+// when the field being validated gets the is-invalid class.(see _patients.global.scss)
+.validationWarning {
+  @extend .textStyle4;
+  color: red;
+  display: none;
+}

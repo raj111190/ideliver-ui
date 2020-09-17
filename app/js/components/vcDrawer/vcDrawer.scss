@@ -1,0 +1,13 @@
+@import '../../../css/theme';
+.normal {
+  width: $side-nav-width;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  overflow: hidden;
+  border-right: unset !important;
+}
+.normal::-webkit-scrollbar {
+  display: none;
+}

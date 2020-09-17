@@ -1,0 +1,55 @@
+@import '../../../css/theme';
+.para {
+  opacity: 0.4 !important;
+}
+
+.fullRow {
+  > hr {
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+}
+
+.row {
+  display: flex !important;
+}
+
+.backgroundColorIconGreen {
+  > svg {
+    fill: $seafoam_blue !important;
+  }
+}
+.backgroundColorIconPurple {
+  > svg {
+    fill: $dark_orchid !important;
+  }
+}
+
+.backgroundColorLabelGreen {
+  color: $seafoam_blue !important;
+}
+
+.backgroundColorLabelPurple {
+  color: $dark_orchid !important;
+}
+
+.label {
+  margin-left: 35px;
+  font-size: 14px !important;
+  margin-top: -2px !important;
+}
+
+.summaryLabel {
+  overflow-x: auto;
+  word-wrap: break-word;
+}
+
+.overflow {
+  padding-top: 24px !important;
+  max-height: 186px !important;
+  overflow-y: auto !important;
+}
+
+.divider {
+  margin-top: 2px !important;
+}

@@ -1,0 +1,25 @@
+@import '../../../css/theme';
+
+.timeBarSize {
+  width: 100%;
+}
+
+.laborSummary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.topMargin {
+  margin-top: 16px;
+}
+
+.noOverflow {
+  overflow-x: hidden;
+}
+
+.enableButton {
+  background-color: $dark_lavender !important;
+  color: $white !important;
+}

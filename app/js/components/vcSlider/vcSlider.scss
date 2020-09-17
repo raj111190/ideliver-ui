@@ -1,0 +1,30 @@
+@import '../../../css/theme';
+
+.textField {
+  margin-left: 20px !important;
+  width: 50px;
+}
+
+.container {
+  max-width: 290px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.left {
+  margin-top: 15px;
+  float: left;
+  width: 85%;
+  padding: '50px';
+  margin-bottom: 15px;
+}
+
+.right {
+  float: right;
+  width: 15%;
+}
+
+:export {
+  dark_lavender: $dark_lavender;
+}

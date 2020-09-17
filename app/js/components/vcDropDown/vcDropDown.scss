@@ -1,0 +1,17 @@
+@import '../../../css/theme';
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: inherit !important;
+}
+.formControl {
+  height: inherit;
+  min-width: inherit !important;
+}
+
+.formLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

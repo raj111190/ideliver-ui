@@ -1,0 +1,17 @@
+@import '../../../css/theme';
+
+.container {
+  color: $text_color_7;
+  overflow-x: auto;
+  max-height: 115px;
+  width: 96%;
+}
+
+.label {
+  font-size: 14px;
+  color: #a4a4a4;
+  font-weight: normal;
+  margin: 0;
+  padding: 1px;
+  line-height: 20px;
+}

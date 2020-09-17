@@ -1,0 +1,21 @@
+@import '../../../css/theme';
+
+.text {
+  > span {
+    font-weight: 550 !important;
+    margin-right: 22px !important;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    margin-top: 13px !important;
+    color: $hex_black2 !important;
+  }
+}
+
+.container {
+  display: inline-flex !important;
+}
+
+.vcButton {
+  > button {
+    margin-right: 22px !important;
+  }
+}

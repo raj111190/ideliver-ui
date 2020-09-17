@@ -1,0 +1,11 @@
+@import '../../../css/theme';
+
+.container {
+  color: $grey;
+}
+
+.text {
+  border-left: 2px solid $seafoam_blue;
+  padding-left: 12px;
+  padding-right: 12px;
+}

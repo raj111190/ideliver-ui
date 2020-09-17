@@ -1,0 +1,115 @@
+@import '../../../css/theme';
+
+%colorPurple {
+  color: rgb(118, 87, 160);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  height: 280px;
+  min-height: 280px;
+  min-width: 600px;
+  overflow: hidden;
+}
+
+.media {
+  position: relative;
+  height: 100%;
+  min-width: 180px;
+  max-width: 180px;
+}
+@media (orientation: portrait) {
+  .media {
+    display: none !important;
+  }
+}
+
+.rightSection {
+  padding: 16px !important;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid $light_grey;
+  margin-left: auto;
+  width: 180px;
+  align-content: center;
+}
+
+.gridContainer {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ancRiskRow {
+  border-top: 1px solid $light_grey;
+  border-bottom: 1px solid $light_grey;
+  > * {
+    padding-top: 2px;
+  }
+}
+
+.cardGridColumn {
+  border-right: 1px solid $light_grey;
+  padding: 1%;
+}
+
+.nameRow {
+  align-items: baseline;
+}
+
+.colorPurple {
+  @extend %colorPurple;
+}
+
+.task {
+  font-weight: bold;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.weekBox {
+  margin-left: 10px;
+  min-width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  background-color: rgba(231, 231, 231, 0.7);
+  color: #7a7a7a;
+  display: inline-block;
+  @extend %roboto;
+  font-weight: bold;
+}
+
+.riskChip {
+  margin: 2px !important;
+  height: 24px !important;
+  background-color: #e43a52 !important;
+  color: $white !important;
+}
+
+.resolvedChip {
+  margin: 2px !important;
+  height: 24px !important;
+  background-color: $seafoam_blue !important;
+  color: $white !important;
+}
+
+.taskRow {
+  @extend %colorPurple;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.parity {
+  @extend %colorPurple;
+  text-align: right;
+  height: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding: 1px;
+  line-height: 20px;
+}

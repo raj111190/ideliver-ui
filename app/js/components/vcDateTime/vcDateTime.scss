@@ -1,0 +1,28 @@
+@import '../../../css/theme';
+.container {
+  color: $text_color_7;
+}
+
+.label {
+  height: 20px;
+  font-size: 14px;
+  color: #a4a4a4;
+  font-weight: normal;
+  margin: 0;
+  padding: 1px;
+  line-height: 20px;
+}
+
+.container {
+  display: 'flex';
+  flexwrap: 'wrap';
+}
+.containerWithMargin {
+  display: 'flex';
+  flexwrap: 'wrap';
+  margin-bottom: 21.8px;
+}
+
+.icon {
+  overflow: hidden;
+}

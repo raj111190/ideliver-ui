@@ -1,0 +1,64 @@
+@import '../../../css/theme';
+
+.acuity {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  line-height: 25px;
+  justify-content: center;
+  align-content: center;
+}
+
+.acuityNumber {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  color: $text_color_4;
+  display: inline-block;
+  @extend %roboto;
+  font-weight: 300;
+}
+
+.acuity_l1 {
+  background-color: $acuity_color_1;
+}
+
+.acuity_l2 {
+  background-color: $acuity_color_2;
+}
+
+.acuity_l3 {
+  background-color: $acuity_color_3;
+}
+
+.acuity_l4 {
+  background-color: $acuity_color_4;
+}
+
+.acuity_l5 {
+  background-color: $acuity_color_5;
+}
+
+.acuityLabel_l1 {
+  color: $acuity_color_1;
+}
+
+.acuityLabel_l2 {
+  color: $acuity_color_2;
+}
+
+.acuityLabel_l3 {
+  color: $acuity_color_3;
+}
+
+.acuityLabel_l4 {
+  color: $acuity_color_4;
+}
+
+.acuityLabel_l5 {
+  color: $acuity_color_5;
+}

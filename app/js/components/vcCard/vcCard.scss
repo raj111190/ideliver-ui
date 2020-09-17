@@ -1,0 +1,52 @@
+@import '../../../css/theme';
+
+.container {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.left {
+  margin: 0;
+  color: $white;
+  float: left;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: left;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+  width: 240px;
+}
+
+.right {
+  float: right;
+  padding: 20px;
+  width: 100%;
+}
+
+.colorRed {
+  background-color: $acuity_color_1;
+}
+
+.colorTomato {
+  background-color: $acuity_color_2;
+}
+
+.colorYellow {
+  background-color: $acuity_color_3;
+}
+
+.colorGreen {
+  background-color: $acuity_color_4;
+}
+
+.colorGrey {
+  background-color: $acuity_color_5;
+}
+
+.colorPurple {
+  background-color: $dark_lavender;
+}

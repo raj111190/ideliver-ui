@@ -1,0 +1,70 @@
+@import '../../../css/theme';
+.dropdown {
+  position: relative;
+  width: 119px;
+}
+.dropdown select {
+  width: 200%;
+}
+.dropdown > * {
+  box-sizing: border-box;
+}
+.dropdown select {
+  margin-top: 26px;
+}
+.dropdown input {
+  position: absolute;
+  width: 119px;
+}
+
+.input {
+  height: 3em !important;
+  outline: none !important;
+  text-align: center !important;
+  color: $dark_lavender !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+.input:focus {
+  outline: none !important;
+}
+
+.container {
+  display: inline-flex !important;
+}
+
+.arrow {
+  > button {
+    > span {
+      > svg {
+        transform: translate(-9px, -28px) !important;
+        z-index: 1 !important;
+        position: absolute !important;
+      }
+    }
+  }
+}
+
+.iconButton {
+  transform: translate(71px, -1px) !important;
+}
+
+.select {
+  transform: translate(59px, -29px) !important;
+  z-index: -1;
+  position: absolute;
+}
+
+.text {
+  margin-top: 13px !important;
+  margin-right: 13px !important;
+  font-weight: 500;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.vcButton {
+  > button {
+    margin-left: 22px !important;
+    margin-right: 22px !important;
+  }
+}
